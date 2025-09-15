@@ -1,3 +1,16 @@
+local host = (vim.loop and vim.loop.os_gethostname()) or ""
+local THEME
+local is_pc = host == "fedora"
+local is_laptop = host == "cachy"
+
+if is_pc then
+  THEME = "lushwal"
+elseif is_laptop then
+  THEME = "everforest"
+else
+  THEME = "kanagawa"
+end
+
 return {
   {
     "rose-pine/neovim",
@@ -52,6 +65,15 @@ return {
   {
     "oncomouse/lushwal.nvim",
     cmd = { "LushwalCompile" },
+    init = function()
+      vim.g.lushwal_configuration = {
+        terminal_colors = true,
+        transparent_background = true,
+        color_overrides = {
+          background = "#000",
+        },
+      }
+    end,
     dependencies = {
       { "rktjmp/lush.nvim" },
       { "rktjmp/shipwright.nvim" },
@@ -61,7 +83,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = THEME,
     },
   },
 }
