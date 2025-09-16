@@ -1,3 +1,10 @@
+gui:
+  nerdFontsVersion: "3"
+  showIcons: false
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
 customCommands:
   - key: "C"
     command: 'git commit -m "{{ .Form.Type }}{{if .Form.Scope}}({{ .Form.Scope }}){{end}}: {{ .Form.Emoji }} {{ .Form.Description }}"'
