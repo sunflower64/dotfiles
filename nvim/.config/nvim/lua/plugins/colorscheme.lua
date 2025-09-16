@@ -1,14 +1,12 @@
 local host = (vim.loop and vim.loop.os_gethostname()) or ""
-local THEME
-local is_pc = host == "fedora"
-local is_laptop = host == "cachy"
+local theme
 
-if is_pc then
-  THEME = "lushwal"
-elseif is_laptop then
-  THEME = "everforest"
+if host == "fedora" then
+  theme = "lushwal"
+elseif host == "cachy" then
+  theme = "everforest"
 else
-  THEME = "kanagawa"
+  theme = "kanagawa"
 end
 
 return {
@@ -83,7 +81,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = THEME,
+      colorscheme = theme,
     },
   },
 }
