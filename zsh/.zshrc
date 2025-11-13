@@ -64,3 +64,6 @@ export PATH="$PATH:$GOBIN"
 # pnpm end
 #
 #
+
+# opencode
+export PATH=/home/est/.opencode/bin:$PATH
