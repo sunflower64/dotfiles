@@ -1,0 +1,17 @@
+# OPENCODE - Example theme structure for reference
+#{
+#   "$schema": "https://opencode.ai/theme.json",
+#   "defs": {
+#     "nord0": "#2E3440",
+#     ...
+#   },
+#   "theme": {
+#     "primary": { "dark": "nord8", "light": "nord10" },
+#     ...
+#   }
+# }
+
+[[templates]]
+name = "opencode"
+input_path = "/home/est/.config/matugen/templates/opencode.json"
+output_path = "/home/est/.config/opencode/theme.json"

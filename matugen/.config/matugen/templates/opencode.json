@@ -1,0 +1,231 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "primary": "{{colors.primary.default.hex}}",
+    "primaryLight": "{{colors.primary.light.hex}}",
+    "primaryDark": "{{colors.primary.dark.hex}}",
+    "secondary": "{{colors.secondary.default.hex}}",
+    "secondaryLight": "{{colors.secondary.light.hex}}",
+    "secondaryDark": "{{colors.secondary.dark.hex}}",
+    "tertiary": "{{colors.tertiary.default.hex}}",
+    "tertiaryLight": "{{colors.tertiary.light.hex}}",
+    "tertiaryDark": "{{colors.tertiary.dark.hex}}",
+    "error": "{{colors.error.default.hex}}",
+    "errorLight": "{{colors.error.light.hex}}",
+    "errorDark": "{{colors.error.dark.hex}}",
+    "surface": "{{colors.surface.default.hex}}",
+    "surfaceLight": "{{colors.surface.light.hex}}",
+    "surfaceDark": "{{colors.surface.dark.hex}}",
+    "surfaceVariant": "{{colors.surface_variant.default.hex}}",
+    "onPrimary": "{{colors.on_primary.default.hex}}",
+    "onSecondary": "{{colors.on_secondary.default.hex}}",
+    "onTertiary": "{{colors.on_tertiary.default.hex}}",
+    "onError": "{{colors.on_error.default.hex}}",
+    "onSurface": "{{colors.on_surface.default.hex}}",
+    "onSurfaceVariant": "{{colors.on_surface_variant.default.hex}}",
+    "background": "{{colors.background.default.hex}}",
+    "onBackground": "{{colors.on_background.default.hex}}"
+  },
+  "theme": {
+    "primary": {
+      "dark": "primaryDark",
+      "light": "primary"
+    },
+    "secondary": {
+      "dark": "secondaryDark",
+      "light": "secondary"
+    },
+    "accent": {
+      "dark": "tertiaryDark",
+      "light": "tertiary"
+    },
+    "error": {
+      "dark": "errorDark",
+      "light": "error"
+    },
+    "warning": {
+      "dark": "errorLight",
+      "light": "errorLight"
+    },
+    "success": {
+      "dark": "tertiary",
+      "light": "tertiary"
+    },
+    "info": {
+      "dark": "primaryDark",
+      "light": "primary"
+    },
+    "text": {
+      "dark": "onSurface",
+      "light": "onBackground"
+    },
+    "textMuted": {
+      "dark": "onSurfaceVariant",
+      "light": "onSurfaceVariant"
+    },
+    "background": {
+      "dark": "none",
+      "light": "none"
+    },
+    "backgroundPanel": {
+      "dark": "background",
+      "light": "background"
+    },
+    "backgroundElement": {
+      "dark": "surfaceVariant",
+      "light": "surface"
+    },
+    "border": {
+      "dark": "surfaceVariant",
+      "light": "onSurfaceVariant"
+    },
+    "borderActive": {
+      "dark": "primaryDark",
+      "light": "primary"
+    },
+    "borderSubtle": {
+      "dark": "background",
+      "light": "background"
+    },
+    "diffAdded": {
+      "dark": "tertiary",
+      "light": "tertiary"
+    },
+    "diffRemoved": {
+      "dark": "error",
+      "light": "error"
+    },
+    "diffContext": {
+      "dark": "onSurfaceVariant",
+      "light": "onSurfaceVariant"
+    },
+    "diffHunkHeader": {
+      "dark": "onSurfaceVariant",
+      "light": "onSurfaceVariant"
+    },
+    "diffHighlightAdded": {
+      "dark": "tertiaryLight",
+      "light": "tertiaryLight"
+    },
+    "diffHighlightRemoved": {
+      "dark": "errorLight",
+      "light": "errorLight"
+    },
+    "diffAddedBg": {
+      "dark": "surfaceDark",
+      "light": "surfaceLight"
+    },
+    "diffRemovedBg": {
+      "dark": "surfaceDark",
+      "light": "surfaceLight"
+    },
+    "diffContextBg": {
+      "dark": "surface",
+      "light": "surface"
+    },
+    "diffLineNumber": {
+      "dark": "onSurfaceVariant",
+      "light": "onSurfaceVariant"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "surfaceDark",
+      "light": "surfaceLight"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "surfaceDark",
+      "light": "surfaceLight"
+    },
+    "markdownText": {
+      "dark": "onSurface",
+      "light": "onBackground"
+    },
+    "markdownHeading": {
+      "dark": "primaryDark",
+      "light": "primary"
+    },
+    "markdownLink": {
+      "dark": "secondaryDark",
+      "light": "secondary"
+    },
+    "markdownLinkText": {
+      "dark": "tertiaryDark",
+      "light": "tertiary"
+    },
+    "markdownCode": {
+      "dark": "tertiary",
+      "light": "tertiary"
+    },
+    "markdownBlockQuote": {
+      "dark": "onSurfaceVariant",
+      "light": "onSurfaceVariant"
+    },
+    "markdownEmph": {
+      "dark": "errorLight",
+      "light": "errorLight"
+    },
+    "markdownStrong": {
+      "dark": "primaryLight",
+      "light": "primaryDark"
+    },
+    "markdownHorizontalRule": {
+      "dark": "onSurfaceVariant",
+      "light": "onSurfaceVariant"
+    },
+    "markdownListItem": {
+      "dark": "primaryDark",
+      "light": "primary"
+    },
+    "markdownListEnumeration": {
+      "dark": "tertiaryDark",
+      "light": "tertiary"
+    },
+    "markdownImage": {
+      "dark": "secondaryDark",
+      "light": "secondary"
+    },
+    "markdownImageText": {
+      "dark": "tertiaryDark",
+      "light": "tertiary"
+    },
+    "markdownCodeBlock": {
+      "dark": "onSurface",
+      "light": "onBackground"
+    },
+    "syntaxComment": {
+      "dark": "onSurfaceVariant",
+      "light": "onSurfaceVariant"
+    },
+    "syntaxKeyword": {
+      "dark": "secondaryDark",
+      "light": "secondary"
+    },
+    "syntaxFunction": {
+      "dark": "primaryDark",
+      "light": "primary"
+    },
+    "syntaxVariable": {
+      "dark": "tertiaryDark",
+      "light": "tertiary"
+    },
+    "syntaxString": {
+      "dark": "tertiary",
+      "light": "tertiary"
+    },
+    "syntaxNumber": {
+      "dark": "tertiaryLight",
+      "light": "tertiaryLight"
+    },
+    "syntaxType": {
+      "dark": "tertiaryDark",
+      "light": "tertiary"
+    },
+    "syntaxOperator": {
+      "dark": "secondaryDark",
+      "light": "secondary"
+    },
+    "syntaxPunctuation": {
+      "dark": "onSurface",
+      "light": "onBackground"
+    }
+  }
+}

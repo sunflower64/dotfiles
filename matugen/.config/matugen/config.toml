@@ -1,0 +1,24 @@
+# Matugen configuration
+# https://github.com/InioX/matugen
+
+# OPENCODE theme template
+# This template generates a theme.json file compatible with OpenCode
+# based on Material Design 3 colors extracted from your wallpaper or color
+
+[config]
+
+[templates.opencode]
+input_path = "/home/est/.config/matugen/templates/opencode.json"
+output_path = "/home/est/.config/opencode/themes/matugen.json"
+
+[templates.kitty]
+input_path = "/home/est/.config/matugen/templates/kitty.conf"
+output_path = "/home/est/.config/kitty/matugen-theme.conf"
+
+[templates.zsh]
+input_path = "/home/est/.config/matugen/templates/zsh-colors.zsh"
+output_path = "/home/est/.config/zsh/matugen-colors.zsh"
+
+[templates.tidal]
+input_path = "/home/est/.config/matugen/templates/tidal.css"
+output_path = "/home/est/.config/tidal-hifi/themes/matugen.css"
