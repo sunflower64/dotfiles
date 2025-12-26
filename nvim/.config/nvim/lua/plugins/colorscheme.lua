@@ -4,7 +4,7 @@ local theme
 if host == "fedora" then
   theme = "lushwal"
 elseif host == "cachy" then
-  theme = "everforest"
+  theme = "neopywal"
 else
   theme = "kanagawa"
 end
@@ -58,7 +58,9 @@ return {
     name = "neopywal",
     lazy = false,
     priority = 1000,
-    opts = {},
+    opts = {
+      transparent_background = true,
+    },
   },
   {
     "oncomouse/lushwal.nvim",
